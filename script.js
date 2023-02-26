@@ -1,8 +1,4 @@
-function submitForm() {
-  var musician = document.getElementById("musician").value;
-  // Add more code here to process the form submission
-}
-
+// script.js
 // First, define a function that retrieves an access token for the Spotify API
 function getAccessToken() {
   // Replace YOUR_CLIENT_ID and YOUR_CLIENT_SECRET with your own values
@@ -66,19 +62,4 @@ function getTopTracks(artistId, accessToken) {
       getOAuthToken: cb => { cb(accessToken); }
     });
     
-    player.addListener("ready", ({ device_id }) => {
-      console.log("Ready with Device ID", device_id);
-      player.pause();
-      player.play({
-        uris: [trackUri]
-      });
-      
-      setTimeout(() => {
-        player.pause();
-      }, 5000);
-    });
-    
-    player.connect();
-  })
-  .catch(error => console.error(error));
-}
+    player.addListener("ready", ({ device_id })
