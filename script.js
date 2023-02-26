@@ -1,8 +1,8 @@
 // First, define a function that retrieves an access token for the Spotify API
 function getAccessToken() {
   // Replace YOUR_CLIENT_ID and YOUR_CLIENT_SECRET with your own values
-  var clientId = "YOUR_CLIENT_ID";
-  var clientSecret = "YOUR_CLIENT_SECRET";
+  var clientId = "86cb0bec8eec441cbe481eab050ceb44";
+  var clientSecret = "e83a743f54bd4e9fa4f88efa2bc9bb72";
   
   // Make a POST request to the Spotify API to retrieve an access token
   fetch("https://accounts.spotify.com/api/token", {
