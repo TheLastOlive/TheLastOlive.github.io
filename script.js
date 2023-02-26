@@ -1,3 +1,8 @@
+function submitForm() {
+  var musician = document.getElementById("musician").value;
+  // Add more code here to process the form submission
+}
+
 // First, define a function that retrieves an access token for the Spotify API
 function getAccessToken() {
   // Replace YOUR_CLIENT_ID and YOUR_CLIENT_SECRET with your own values
