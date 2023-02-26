@@ -67,6 +67,10 @@ function getTopTracks(artistId, accessToken) {
       player.play({
         uris: [trackUri]
       });
+      
+      setTimeout(() => {
+        player.pause();
+      }, 5000);
     });
     
     player.connect();
