@@ -1,6 +1,6 @@
 // Set up the authorization flow
 const clientId = "86cb0bec8eec441cbe481eab050ceb44";
-const redirectUri = "http://localhost:8000/callback.html";
+const redirectUri = "https://thelastolive.github.io/callback.html";
 const scope = "user-read-private user-read-email";
 const state = generateRandomString(16);
 
