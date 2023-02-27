@@ -2,16 +2,7 @@
 const clientId = "86cb0bec8eec441cbe481eab050ceb44";
 const redirectUri = "https://thelastolive.github.io/callback.html";
 const scope = "user-read-private user-read-email";
-const state = generateRandomString(16);
-
-function generateRandomString(length) {
-  let text = "";
-  const possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  for (let i = 0; i < length; i++) {
-    text += possible.charAt(Math.floor(Math.random() * possible.length));
-  }
-  return text;
-}
+const state = "aAkdjAorpAltyeF";
 
 function getAuthorizationUrl() {
   const url = "https://accounts.spotify.com/authorize";
