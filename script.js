@@ -22,7 +22,8 @@ function getAuthorizationUrl() {
 // Define a function to handle form submission
 function submitForm(event) {
   event.preventDefault(); // Prevent the form from submitting normally
-
+  
+  alert("Mic check, Mic check, 1, 2, 3!");
   // Get the musician name from the form input
   const musicianName = document.getElementById("musician-name").value;
 
