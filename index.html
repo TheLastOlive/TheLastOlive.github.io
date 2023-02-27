@@ -1,17 +1,16 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Music Player</title>
-</head>
-<body>
-  <h1>Enter the name of a musician:</h1>
-  <form>
-    <input type="text" id="musician" placeholder="Musician name">
-    <input type="submit" value="Submit" onclick="submitForm(event)">
-  </form>
-  <script src="https://sdk.scdn.co/spotify-player.js"></script>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <title>My Music Player</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Enter the name of a musician:</h1>
+    <form id="musician-form">
+      <label for="musician-name">Musician name:</label>
+      <input type="text" id="musician-name" name="musician-name" required>
+      <button type="submit">Play random track</button>
+    </form>
+  </body>
 </html>
