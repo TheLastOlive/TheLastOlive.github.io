@@ -1,4 +1,9 @@
 // script.js
+function submitForm(event) {
+  event.preventDefault(); // Prevent the form from submitting normally
+  getAccessToken(); // Call the getAccessToken function to start the process of retrieving and playing the musician's top track
+}
+
 // First, define a function that retrieves an access token for the Spotify API
 function getAccessToken() {
   // Replace YOUR_CLIENT_ID and YOUR_CLIENT_SECRET with your own values
