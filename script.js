@@ -77,9 +77,4 @@ function submitForm(event) {
   }
 }
 
-// Add an event listener to the form to handle form submission
-const form = document.getElementById("musician-form");
-form.addEventListener("submit", submitForm);
-
-
 
