@@ -74,7 +74,7 @@ function submitForm(event) {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded"
       },
-      body: `grant_type=authorization_code&code=${code}&redirect_uri=${encodeURIComponent(redirectUri)}&client_id=${clientId}&client_secret=${clientSecret}`
+      body: `grant_type=authorization_code&code=${code}&redirect_uri=${encodeURIComponent(redirectUri)}&client_id=${clientId}&client_secret=${e83a743f54bd4e9fa4f88efa2bc9bb72}`
     })
     .then(response => response.json())
     .then(data => {
