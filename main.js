@@ -1,5 +1,5 @@
 const button = document.getElementById("button");
-const display = document.getElementById("result");
+const result = document.getElementById("result");
 button.addEventListener("click", analyze);
 function analyze(){
   button.remove();
@@ -7,7 +7,7 @@ function analyze(){
 }
 
 function displayNextMessage(num){
-  setTimeout({displayNextMessage(num+1)}, 2000)
+  setTimeout(() => displayNextMessage(num + 1), 2000);
   switch(num){
     case 1:
       result.innerHTML = "Analyzing data...";
