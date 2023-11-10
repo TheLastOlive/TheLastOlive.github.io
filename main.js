@@ -47,6 +47,7 @@ function displayNextMessage(num) {
       display.innerHTML = "It's definitely back here somewhere...";
       break;
     default:
+      new Audio("Happy Birthday.wav").play();
       display.innerHTML = "TADA! Here you are, my friend. Hope you enjoy.";
       break;
   }
