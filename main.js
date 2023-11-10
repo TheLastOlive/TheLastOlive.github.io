@@ -8,7 +8,9 @@ function analyze() {
 }
 
 function displayNextMessage(num) {
-  setTimeout(() => displayNextMessage(num + 1), 2000);
+  if(num < 12){
+    setTimeout(() => displayNextMessage(num + 1), 2000);
+  }
   switch (num) {
     case 1:
       display.innerHTML = "Analyzing data...";
