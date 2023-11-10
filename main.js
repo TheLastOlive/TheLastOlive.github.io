@@ -35,7 +35,7 @@ function displayNextMessage(num) {
       display.innerHTML = "IT IS! IT'S YOUR BIRTHDAY!!!";
       break;
     case 9:
-      display.innerHTML = "Happy birthday, Tommy Boy";
+      display.innerHTML = "Happy birthday, Tommy Boy!";
       break;
     case 10:
       display.innerHTML = "I actually got you something, you know.";
@@ -44,6 +44,12 @@ function displayNextMessage(num) {
       display.innerHTML = "One second...";
       break;
     case 12:
+      display.innerHTML = "\t\t\t\t\t\t\tMaybe it's over here?";
+      break;
+    case 13:
+      display.innerHTML = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOr down here somewhere...";
+      break;
+    case 14:
       display.innerHTML = "It's definitely back here somewhere...";
       break;
     default:
