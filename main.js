@@ -44,12 +44,6 @@ function displayNextMessage(num) {
       display.innerHTML = "One second...";
       break;
     case 12:
-      display.innerHTML = "\t\t\t\t\t\t\tMaybe it's over here?";
-      break;
-    case 13:
-      display.innerHTML = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOr down here somewhere...";
-      break;
-    case 14:
       display.innerHTML = "It's definitely back here somewhere...";
       break;
     default:
