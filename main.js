@@ -8,7 +8,7 @@ function analyze() {
 }
 
 function displayNextMessage(num) {
-  if(num < 12){
+  if(num < 13){
     setTimeout(() => displayNextMessage(num + 1), 2000);
   }
   switch (num) {
