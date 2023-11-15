@@ -1,5 +1,6 @@
 const button = document.getElementById("button");
 const display = document.getElementById("result");
+const video = document.getElementById("video");
 button.addEventListener("click", analyze);
 
 function analyze() {
@@ -51,6 +52,7 @@ function displayNextMessage(num) {
     default:
       new Audio("Happy Birthday.wav").play();
       display.innerHTML = "TADA! Here you are, my friend. Hope you enjoy.";
+      video.innerHTML = "<iframe width="560" height="315" src="https://www.youtube.com/embed/0EFXkFsAv2k?si=VDL9jL025uYrf8XK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>"
       break;
   }
 }
