@@ -8,6 +8,24 @@ function analyze() {
   displayNextMessage(1);
 }
 
+function addYouTubeVideo() {
+  // Replace 'VIDEO_ID' with the actual YouTube video ID
+  var videoId = '0EFXkFsAv2k';
+
+  // Create an iframe element
+  var iframe = document.createElement('iframe');
+
+  // Set the attributes for the iframe
+  iframe.width = '1600';
+  iframe.height = '800';
+  iframe.src = 'https://www.youtube.com/embed/' + videoId;
+  iframe.frameBorder = '0';
+  iframe.allowFullscreen = true;
+
+  // Append the iframe to the 'video-container' div
+  document.getElementById('video-container').appendChild(iframe);
+}
+
 function displayNextMessage(num) {
   if(num < 13){
     setTimeout(() => displayNextMessage(num + 1), 2000);
@@ -52,7 +70,6 @@ function displayNextMessage(num) {
     default:
       new Audio("Happy Birthday.wav").play();
       display.innerHTML = "TADA! Here you are, my friend. Hope you enjoy.";
-      source.setAttribute('src', 'https://www.youtube.com/watch?v=0EFXkFsAv2k');
-      source.setAttribute('type', 'video/mp4');
+      addYouTubeVideo();
   }
 }
