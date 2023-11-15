@@ -52,7 +52,7 @@ function displayNextMessage(num) {
     default:
       new Audio("Happy Birthday.wav").play();
       display.innerHTML = "TADA! Here you are, my friend. Hope you enjoy.";
-      source.setAttribute('src', 'http://techslides.com/demos/sample-videos/small.mp4');
+      source.setAttribute('src', 'https://www.youtube.com/watch?v=0EFXkFsAv2k');
       source.setAttribute('type', 'video/mp4');
   }
 }
