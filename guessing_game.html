@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guessing time!</title>
+</head>
+<body id="game">
+    <header id="head" onclick="goHome()">
+        <p>Good Luck!</p>
+    </header>
+    <div class="web-container">
+        <div class="guessPanel">
+            <div class="pointTotalContainer">
+                <p>Points Earned:</p>
+                <div id="pointTotalDisplay">
+                    <h2 id="allPoints"></h2>
+                </div>
+            </div>
+            <div class="pointTotalContainer">
+                <p>Possible Points This Round:</p>
+                <div id="currentPointTotalDisplay">
+                    <h1 id="pointTotal"></h1>
+                </div>
+            </div>
+            <div class="audioPlayer">
+                <input type="range" min="1" max="100" value="1" id="audioSlider">
+                <div class="audioButtons">
+                    <input type="image" src="playButton.png" class="playPause" onclick="playPause()">
+                    <div class="timestamp">
+                        <p id="currentTime"></p>
+                        <p>/</p>
+                        <p id="duration"></p>
+                    </div>
+                </div>
+            </div>
+            <button id="extendDurationButton">+2 Seconds (-3 points)</button>
+            <p id="answer"></p>
+            <input type="text" id="guess" placeholder="Your guess goes here...">
+            <div class="buttons">
+                <button id="guessButton">Submit Guess</button>
+                <button id="skipButton">Pass</button>
+            </div>
+            <button id="nextButton">Next</button>
+            <sub>Your guess doesn't need to be exactly correct, but try to be specific. Punctuation matters!</sub>
+        </div>
+        <div class="background"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

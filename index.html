@@ -1,1 +1,43 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Music thing</title>
+</head>
+<body id="search">
+    <header id="head" onclick="goHome()">
+        <p>Are You a True Stan?</p>
+    </header>
+    <main id="main">
+        <p id="mainText">How well do you know your stuff?<br><br>
+        Test your musical recognition! Search for your favorite artist or album.</p>
+        <section id="homeContainer">
+            <section id="searchbarcontainer">
+                <section id="pick">
+                    <select id="type">
+                        <option class="select" value="artist">Artist</option>
+                        <option class="select" value="album">Album</option>
+                        <option class="select" value="playlist">Playlist</option>
+                    </select>
+                </section>
+                <input type="text" id="searchbar" placeholder="Type Artist Name Here">
+                <button id="playlistButton">Run Game</button>
+            </section>
+            <ul id="list">
+            </ul>
+        </section>   
+    </main>
+    <footer id="footer">
+            <ul>
+                <li>Created by Jonathan Rodriguez and Slater Fisch</li>
+                <li>
+                    <img src="spotify-logo.png" id="spotifyLogo">
+                    <p>Powered by Spotify<sup>tm</sup></p>
+                </li>
+            </ul>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
